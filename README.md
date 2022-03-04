@@ -20,3 +20,13 @@ presale                          0.1eth
 
 max buy during public sale       2 pcs
 ```
+
+## First Step: Generate the merkle proof
+
+Add whitlisted address to `whitelist/addresses.json`.
+
+PLEASE NOTE: Don't forget to normalize the address first (e.g. remove leading/trailing whitespace)
+
+Generate the merkle proof:
+
+    node whitelist/generateMerkleProofs.js
